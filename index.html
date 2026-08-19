@@ -119,6 +119,11 @@
   .layer h3{ font-size:19px; margin-bottom:8px; }
   .layer p{ font-size:14px; color:var(--ink-soft); }
   .quote{ border-left:3px solid var(--accent); padding:18px 24px; font-style:italic; font-size:16px; color:var(--ink); background:#fff; border-radius:0 8px 8px 0; margin:30px 0; }
+  .persp-block{ margin-top:44px; }
+  .persp-block > .lead{ margin-bottom:28px; }
+  .persp-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  @media (max-width:880px){ .persp-grid{ grid-template-columns:1fr; } }
+  .persp-grid .layer .num{ color:var(--persp-color,var(--accent)); }
   .sixr{ display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
   .sixr .r{ flex:1; min-width:140px; border:1px solid var(--line); background:#fff; border-radius:8px; padding:16px; text-align:center; }
   .sixr .r b{ display:block; font-family:Georgia,serif; font-size:16px; margin-bottom:4px; }
@@ -406,23 +411,28 @@
     <div class="eyebrow">The Method</div>
     <h2>Missional Bible Reading</h2>
     <p class="lead">Genesis and Exodus are the fruit of this method — not the whole of it. The method itself can be applied to any passage of Scripture.</p>
-    <div class="method-layers">
-      <div class="layer">
-        <div class="num">01 · Biblical Story</div>
-        <h3>What story is the Bible telling?</h3>
-        <p>The single, unfolding story of God's mission — from creation to new creation.</p>
-      </div>
-      <div class="layer">
-        <div class="num">02 · Trinitarian Lens</div>
-        <h3>How do we read a passage?</h3>
-        <p>Through a God-centered, Christ-centered, and Spirit-centered reading of the text.</p>
-      </div>
-      <div class="layer">
-        <div class="num">03 · 6R Pathway</div>
-        <h3>Where does the reading lead?</h3>
-        <p>From formation, to practice, to raising up leaders, to reproduction among the nations.</p>
+
+    <div class="persp-block" style="margin-top:0;">
+      <p class="lead" style="margin-bottom:28px;">Built on two interpretive foundations — historical grounding and transcendent meaning — this method guides you to read each week's passage through three perspectives, together within the work of the Triune God.</p>
+      <div class="persp-grid">
+        <div class="layer" style="--persp-color:var(--trinity-blue);">
+          <div class="num">01 · God-Centered</div>
+          <h3>What does this reveal about God?</h3>
+          <p>Reads the passage first for God's character, will, and mission — and asks how our lives should respond to that God.</p>
+        </div>
+        <div class="layer" style="--persp-color:var(--accent);">
+          <div class="num">02 · Christ-Centered</div>
+          <h3>How is this fulfilled in Jesus?</h3>
+          <p>Reads the passage within God's whole redemptive story, tracing how it is fulfilled in the mission of God accomplished in Christ.</p>
+        </div>
+        <div class="layer" style="--persp-color:var(--trinity-green);">
+          <div class="num">03 · Spirit-Centered</div>
+          <h3>How does the Spirit lead us to respond?</h3>
+          <p>Connects the rightly-understood text to today's life and community under the Spirit's guidance, leading the church into God's mission.</p>
+        </div>
       </div>
     </div>
+
     <div style="max-width:560px;margin:30px auto 0;">
       <svg viewBox="0 0 600 520" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,'Times New Roman',serif">
         <defs>
