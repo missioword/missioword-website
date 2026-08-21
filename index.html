@@ -65,9 +65,11 @@
   nav.links .drop-menu a{ display:block; padding:8px 10px; border-radius:5px; opacity:0.85; white-space:nowrap; }
   nav.links .drop-menu a:hover{ opacity:1; background:var(--cream-deep); }
   .langs{ display:flex; gap:6px; align-items:center; font-size:11.5px; font-weight:700; flex-shrink:0; }
-  .langs span{ padding:5px 10px; border-radius:100px; }
+  .langs span, .langs a{ padding:5px 10px; border-radius:100px; }
   .lang-active{ background:var(--ink); color:var(--cream); }
   .lang-soon{ color:var(--ink-soft); opacity:0.55; }
+  .lang-link{ color:var(--ink-soft); text-decoration:none; }
+  .lang-link:hover{ background:var(--cream-deep); color:var(--ink); }
   @media (max-width:1080px){ nav.links{ display:none; } }
 
   /* HERO */
@@ -229,8 +231,8 @@
     </nav>
     <div class="langs">
       <span class="lang-active">EN</span>
-      <span class="lang-soon">中文</span>
-      <span class="lang-soon">한국어</span>
+      <a class="lang-link" href="homepage_zh.html">中文</a>
+      <a class="lang-link" href="homepage_ko.html">한국어</a>
     </div>
   </div>
 </header>
@@ -721,7 +723,7 @@
         <p style="color:#a8a494;font-size:14px;">Bring the 4-Day Intensive to your church, seminary, or organization — reach out to request dates.</p>
       </div>
     </div>
-    <div class="footer-note">Bible to the Nations · © 2026 MissioWord · This site is launching in English first, with 简体中文 and 한국어 to follow.</div>
+    <div class="footer-note">Bible to the Nations · © 2026 MissioWord · This site is available in English, 简体中文, and 한국어.</div>
   </div>
 </footer>
 
