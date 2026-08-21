@@ -57,7 +57,7 @@
   nav.links a{ opacity:0.8; }
   nav.links a:hover{ opacity:1; color:var(--accent); }
   nav.links .nav-dropdown{ position:relative; }
-  nav.links .nav-dropdown > .drop-trigger{ opacity:0.8; cursor:default; display:inline-flex; align-items:center; gap:3px; }
+  nav.links .nav-dropdown > .drop-trigger{ opacity:0.8; cursor:pointer; display:inline-flex; align-items:center; gap:3px; color:inherit; text-decoration:none; }
   nav.links .nav-dropdown > .drop-trigger::after{ content:"▾"; font-size:9px; }
   nav.links .nav-dropdown:hover > .drop-trigger{ opacity:1; color:var(--accent); }
   nav.links .drop-menu{ display:none; position:absolute; top:100%; left:0; margin-top:10px; background:var(--cream); border:1px solid var(--line); border-radius:8px; padding:6px; min-width:150px; box-shadow:0 10px 24px rgba(32,32,29,0.14); z-index:20; }
@@ -218,7 +218,7 @@
       <a href="#journey">Get Started</a>
       <a href="#method">The Method</a>
       <div class="nav-dropdown">
-        <span class="drop-trigger">Training</span>
+        <a class="drop-trigger" href="#engage">Training</a>
         <div class="drop-menu">
           <a href="#pilot">4-Week Pilot</a>
           <a href="#intensive">4-Day Intensive</a>
